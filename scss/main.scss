@@ -1,0 +1,96 @@
+$main-color : #012E83;
+$sub-color : #EB121D;
+$back-color: #e9e9e9;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+header {
+    background-color: $back-color;
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+
+        .cover {
+            width: 90%;
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 90%;
+
+            color: $main-color;
+
+            .photo {
+                width: 30%;
+                border-radius: 50%;
+                position: relative;
+                top: -70px;
+                box-shadow: 10px 10px 20px white, -10px -10px 20px white, 10px -10px 20px white, -10px 10px 20px white;
+            }
+            .name {
+                position: relative;
+                top: -50px;
+                font-weight: bold;
+            }
+            .data-container {
+                text-align: center;
+                position: relative;
+                top: -40px;
+            }
+        }
+    }
+}
+
+main {
+    background-color: $back-color;
+
+    .photo-slide-container {
+        margin: 0 5%;
+    }
+
+    .contact {
+        padding: 50px 15%;
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 5px 0;
+            gap: 15px;
+            color: $main-color;
+            text-decoration: none;
+
+            p {
+                position: relative;
+                top: 10px;
+            }
+        }
+    }
+
+    .map-container {
+
+        iframe {
+            width: 90%;
+            margin: 0 5% 50px 5%;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7em;
+    background-color: $main-color;
+    color: $back-color;
+}
